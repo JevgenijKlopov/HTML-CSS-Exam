@@ -17,6 +17,7 @@ $color-light-orange: #FFF0E8;
 * {
     padding: 0;
     margin: 0;
+    font-family: 'Inter', sans-serif;
 }
 header {
     display: flex;
@@ -33,7 +34,7 @@ header {
         padding-left: 20px;
         text-decoration: none;
         color: $color-dark2;
-        font-size: 20px;
+        font-size: 25px;
     }
     a:hover {
         color: $color-pink;
@@ -54,6 +55,43 @@ header {
 main {
     @include padding;
 }
+
 .first-container {
     display: flex;
+    justify-content: space-between;
+    .first-container-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 35%;
+        height: 600px;
+}
+    p:first-of-type {
+        margin-top: 80px;
+        color: $color-pink;
+        font-size: 20px;
+        font-weight: 700;
+        letter-spacing: 1.5px;
+    }
+    p {
+        font-size: 20px;
+        color: $color-dark2;
+    }
+    h1 {
+        font-size: 100px;
+        font-weight: 900;
+    }
+    button {
+        width: 170px;
+        height: 70px;
+        background: none;
+        border-radius: 35px;
+        border: double 4px transparent;
+        background-image: linear-gradient(white,white),
+        linear-gradient(90deg, $color-pink, $color-orange);
+        background-origin: border-box;
+        background-clip: content-box, border-box;
+        font-size: 18px;
+        font-weight: bold;
+    }
 }

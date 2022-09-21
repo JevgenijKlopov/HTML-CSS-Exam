@@ -1,6 +1,7 @@
 * {
   padding: 0;
   margin: 0;
+  font-family: "Inter", sans-serif;
 }
 
 header {
@@ -19,7 +20,7 @@ header a {
   padding-left: 20px;
   text-decoration: none;
   color: #555555;
-  font-size: 20px;
+  font-size: 25px;
 }
 header a:hover {
   color: #FF3998;
@@ -43,4 +44,39 @@ main {
 
 .first-container {
   display: flex;
+  justify-content: space-between;
+}
+.first-container .first-container-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 35%;
+  height: 600px;
+}
+.first-container p:first-of-type {
+  margin-top: 80px;
+  color: #FF3998;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+.first-container p {
+  font-size: 20px;
+  color: #555555;
+}
+.first-container h1 {
+  font-size: 100px;
+  font-weight: 900;
+}
+.first-container button {
+  width: 170px;
+  height: 70px;
+  background: none;
+  border-radius: 35px;
+  border: double 4px transparent;
+  background-image: linear-gradient(white, white), linear-gradient(90deg, #FF3998, #FF8139);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  font-size: 18px;
+  font-weight: bold;
 }/*# sourceMappingURL=styles.css.map */
