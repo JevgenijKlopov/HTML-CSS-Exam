@@ -36,19 +36,19 @@ header {
         color: $color-dark2;
         font-size: 25px;
     }
-    a:hover {
+    a:last-of-type {
         color: $color-pink;
     }
     .burger {
         display: none;
         flex-direction: column;
         justify-content: space-around;
-        width: 50px;
-        height: 20px;
+        width: 30px;
+        height: 30px;
     }
     .burger-item {
-        width: 17px;
-        height: 3px;
+        width: 30px;
+        height: 4px;
         background: $color-dark3;
     }
 }
@@ -118,7 +118,66 @@ main {
     ul {
         display: flex;
         justify-content: space-between;
-        padding-top: 100px;
+        padding-top: 150px;
         list-style: none;
+    }
+}
+.third-conteiner{
+    margin-top: 150px;
+    .nft-flex {
+        display: flex;
+        justify-content: space-between;
+    }
+    h5 {
+        font-size: 40px;
+        font-weight: 500;
+        padding-bottom: 25px;
+    }
+    p {
+        font-size: 22px;
+        color: $color-dark2;
+    }
+    a {
+        color: $color-dark2;
+        font-weight: 500;
+    }
+}
+.nft-container {
+    margin-top: 50px;
+    width: 290px;
+    height: 400px;
+    border-radius: 15px;
+    background: $color-light2;
+    .nft-text-container {
+        display: flex;
+        justify-content: space-between;
+    }
+    ul {
+        list-style: none;
+        padding: 10px 20px;
+    }
+    .nft-left-text li {
+        padding-top: 12px;
+    }
+    .nft-right-text li {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        padding-top: 10px;
+    }
+    .nft-left-text li:first-of-type {
+        color: $color-orange;
+        font-size: 13px;
+        font-weight: 500;
+    }
+    .nft-right-text li:first-of-type {
+        color: $color-dark3;
+    }
+    li:last-of-type {
+        color: $color-dark3;
+    }
+    li:nth-of-type(2) {
+        font-size: 20px;
+        font-weight: 500;
     }
 }

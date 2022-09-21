@@ -22,19 +22,19 @@ header a {
   color: #555555;
   font-size: 25px;
 }
-header a:hover {
+header a:last-of-type {
   color: #FF3998;
 }
 header .burger {
   display: none;
   flex-direction: column;
   justify-content: space-around;
-  width: 50px;
-  height: 20px;
+  width: 30px;
+  height: 30px;
 }
 header .burger-item {
-  width: 17px;
-  height: 3px;
+  width: 30px;
+  height: 4px;
   background: #777777;
 }
 
@@ -105,6 +105,67 @@ main {
 .second-container ul {
   display: flex;
   justify-content: space-between;
-  padding-top: 100px;
+  padding-top: 150px;
   list-style: none;
+}
+
+.third-conteiner {
+  margin-top: 150px;
+}
+.third-conteiner .nft-flex {
+  display: flex;
+  justify-content: space-between;
+}
+.third-conteiner h5 {
+  font-size: 40px;
+  font-weight: 500;
+  padding-bottom: 25px;
+}
+.third-conteiner p {
+  font-size: 22px;
+  color: #555555;
+}
+.third-conteiner a {
+  color: #555555;
+  font-weight: 500;
+}
+
+.nft-container {
+  margin-top: 50px;
+  width: 290px;
+  height: 400px;
+  border-radius: 15px;
+  background: #EEEEEE;
+}
+.nft-container .nft-text-container {
+  display: flex;
+  justify-content: space-between;
+}
+.nft-container ul {
+  list-style: none;
+  padding: 10px 20px;
+}
+.nft-container .nft-left-text li {
+  padding-top: 12px;
+}
+.nft-container .nft-right-text li {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-top: 10px;
+}
+.nft-container .nft-left-text li:first-of-type {
+  color: #FF8139;
+  font-size: 13px;
+  font-weight: 500;
+}
+.nft-container .nft-right-text li:first-of-type {
+  color: #777777;
+}
+.nft-container li:last-of-type {
+  color: #777777;
+}
+.nft-container li:nth-of-type(2) {
+  font-size: 20px;
+  font-weight: 500;
 }/*# sourceMappingURL=styles.css.map */
