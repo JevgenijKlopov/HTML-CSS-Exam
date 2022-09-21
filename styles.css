@@ -79,4 +79,32 @@ main {
   background-clip: content-box, border-box;
   font-size: 18px;
   font-weight: bold;
+}
+
+.second-container {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.second-container .gradient-container {
+  background-image: url(assets/background.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 150px 0 80px 50px;
+  border-radius: 30px;
+}
+.second-container p:first-of-type {
+  font-size: 40px;
+  padding-bottom: 15px;
+  font-weight: 500;
+}
+.second-container p {
+  font-size: 22px;
+  font-weight: 500;
+}
+.second-container ul {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 100px;
+  list-style: none;
 }/*# sourceMappingURL=styles.css.map */
