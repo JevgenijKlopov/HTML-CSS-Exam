@@ -1,0 +1,59 @@
+$color-dark1: #111111;
+$color-dark2: #555555;
+$color-dark3: #777777;
+$color-dark4: #999999;
+$color-light1: #FFFFFF;
+$color-light2: #EEEEEE;
+$color-light3: #CCCCCC;
+$color-orange: #FF8139;
+$color-pink: #FF3998;
+$color-green: #39FFA0;
+$color-red: #FF3939;
+$color-light-green: #EDFFF6;
+$color-light-orange: #FFF0E8;
+@mixin padding {
+    padding: 40px 100px;
+}
+* {
+    padding: 0;
+    margin: 0;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    @include padding;
+    img {
+        width: 15%;
+    }
+    ul {
+        display: flex;
+        list-style: none;
+    }
+    a {
+        padding-left: 20px;
+        text-decoration: none;
+        color: $color-dark2;
+        font-size: 20px;
+    }
+    a:hover {
+        color: $color-pink;
+    }
+    .burger {
+        display: none;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 50px;
+        height: 20px;
+    }
+    .burger-item {
+        width: 17px;
+        height: 3px;
+        background: $color-dark3;
+    }
+}
+main {
+    @include padding;
+}
+.first-container {
+    display: flex;
+}
