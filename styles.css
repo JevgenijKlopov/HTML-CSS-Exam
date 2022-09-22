@@ -4,6 +4,11 @@
   font-family: "Inter", sans-serif;
 }
 
+@media screen and (min-width: 360px) and (max-width: 450px) {
+  body {
+    overflow-x: hidden;
+  }
+}
 header {
   display: flex;
   justify-content: space-between;
@@ -158,7 +163,7 @@ button {
   .second-container .gradient-container {
     border-radius: 0;
     background-image: linear-gradient(60deg, #FF3998, #FF8139, #EDFFF6);
-    width: 80%;
+    width: 83%;
     position: relative;
     right: 10px;
     padding: 150px 70px 80px 20px;
